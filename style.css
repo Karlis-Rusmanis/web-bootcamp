@@ -1,6 +1,37 @@
+body {
+    margin: 0;
+}
+
 #top-menu {
     display: flex;
     justify-content: space-between;
+    height: 56px;
+    padding: 0 16px;
+    align-items: center;
+}
+
+#top-box-left {
+    display: flex;
+    align-items: center;
+    width: 185px;
+    height: 40px;
+}
+
+#guide {
+    width: 24px;
+    height: 24px;
+    margin: 0 16px 0 0;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#top-box-center {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 653px;
 }
 
 .search input:focus {
@@ -10,4 +41,78 @@
 
 .search {
     display: flex;
+    width: 565px;
+    height: 32px;
+    padding: 0 4px;
+    margin-left: 40px;
+}
+
+.search input {
+    width: 485px;
+    height: 26px;
+    padding: 2px 5px 2px 7px;
+    border-width: 1px;
+    border-right: 0px;
+    font-size: 17px;
+    border-radius: 2px 0px 0px 2px;
+}
+
+#srch-button {
+    background: #F8F8F8;
+    border: 1px solid #000000;
+    border-radius: 0px 2px 2px 0px;
+    width: 51px;
+    height: 28px;
+    padding: 1px 6px;
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#top-box-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 40px;
+    width: 225px;
+}
+
+#izveidot {
+    width: 24px;
+    height: 24px;
+    padding: 8px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#yt-lietotnes {
+    width: 24px;
+    height: 24px;
+    padding: 8px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pazinojumi {
+    width: 24px;
+    height: 24px;
+    padding: 8px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#google-account {
+    width: 48px;
+    height: 38px;
+    padding: 1px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
