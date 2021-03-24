@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background: rgb(231, 231, 231);
 }
 
 #top-menu {
@@ -8,6 +9,7 @@ body {
     height: 56px;
     padding: 0 16px;
     align-items: center;
+    background: #fff;
 }
 
 #top-box-left {
