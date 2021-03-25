@@ -1,0 +1,117 @@
+$base_size: 14;
+
+@function getEm($size_in_px, $base: 14) {
+    @return $size_in_px/$base + 0em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.side-menu {
+    width: getEm(240);
+    font-size: $base_size + 0px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+
+    hr {
+        width: 100%;
+        color: black;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        height: getEm(40);
+        width: 100%;
+        text-decoration: none;
+        font-size: 1em;
+        line-height: 1.14em;
+        color: #000000;
+        padding-left: 1.86em;
+        box-sizing: border-box;
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.05);
+        }
+    }
+
+    .icon {
+        width: 1.79em;
+        margin-right: 1em;
+        display: flex;
+        justify-content: center;
+    }
+
+    a:active svg,
+    & .current svg{
+    fill: rgb(255, 0, 0);
+    transition: .1s;
+    }
+
+    a.current {
+        background: rgb(231, 231, 231);
+    }
+
+    a:focus {
+        background: rgb(231, 231, 231);
+    }
+
+    &--closed {
+        width: 72px;
+
+        .icon{
+            margin: 0;
+            width: initial;
+        }
+
+        a{
+            flex-direction: column;
+            padding: 0;
+            height: 72px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text{
+            font-size: 10px;
+        }
+
+        :active {
+            color: red;
+        }
+    }
+}
+
+svg {
+    fill: #606060;
+    transition: .1s;
+}
+
+hr {
+    background: #E5E5E5;
+    height: 1px;
+    border: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 720px) {
+    .side-menu {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .side-menu--closed {
+        width: 55px;
+
+        a {
+            height: 55px;
+        }
+
+        .text {
+            display: none;
+        }
+    }
+}
